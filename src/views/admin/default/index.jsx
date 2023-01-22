@@ -40,9 +40,9 @@ import IconBox from "components/icons/IconBox";
 import React from "react";
 import {
   MdAddTask,
-  MdAttachMoney,
-  MdBarChart,
-  MdFileCopy,
+  MdOutlineRunCircle,
+  MdOutlineDirectionsRun,
+  RiMedalFill,
 } from "react-icons/md";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
@@ -75,12 +75,12 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdBarChart} color={brandColor} />
+                <Icon w='32px' h='32px' as={MdOutlineDirectionsRun} color={brandColor} />
               }
             />
           }
-          name='Earnings'
-          value='$350.4'
+          name='Blue Ribbon Event'
+          value='100 Meters'
         />
         <MiniStatistics
           startContent={
@@ -89,14 +89,14 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdAttachMoney} color={brandColor} />
+                <Icon w='32px' h='32px' as={MdOutlineRunCircle} color={brandColor} />
               }
             />
           }
-          name='Spend this month'
-          value='$642.39'
+          name='Least Favourite Event'
+          value='400 Meters'
         />
-        <MiniStatistics growth='+23%' name='Sales' value='$574.34' />
+        <MiniStatistics growth='+23%' name='PB Least Favourite Event' value='44.98s' />
         <MiniStatistics
           endContent={
             <Flex me='-16px' mt='10px'>
@@ -115,8 +115,8 @@ export default function UserReports() {
               </Select>
             </Flex>
           }
-          name='Your balance'
-          value='$1,000'
+          name=' Personal Best 100 M '
+          value='9.58s WR'  
         />
         <MiniStatistics
           startContent={
@@ -127,8 +127,8 @@ export default function UserReports() {
               icon={<Icon w='28px' h='28px' as={MdAddTask} color='white' />}
             />
           }
-          name='New Tasks'
-          value='154'
+          name='Best Performance Year'
+          value='2009'
         />
         <MiniStatistics
           startContent={
@@ -137,12 +137,12 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdFileCopy} color={brandColor} />
+                <Icon w='32px' h='32px' as={} color={brandColor} />
               }
             />
           }
-          name='Total Projects'
-          value='2935'
+          name='Medals'
+          value='30'
         />
       </SimpleGrid>
 
