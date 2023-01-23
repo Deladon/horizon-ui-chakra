@@ -82,11 +82,11 @@ export default function TotalSpent(props) {
         <Flex flexDirection='column' me='20px' mt='28px'>
           <Text
             color={textColor}
-            fontSize='34px'
+            fontSize='24px'
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>
-            Yearly Comparison
+            Two Year Comparitive Graph
           </Text>
           <Flex align='center' mb='20px'>
             <Text
@@ -95,7 +95,7 @@ export default function TotalSpent(props) {
               fontWeight='500'
               mt='4px'
               me='12px'>
-              Total Spent
+              Current and Previous Year
             </Text>
             <Flex align='center'>
               <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
