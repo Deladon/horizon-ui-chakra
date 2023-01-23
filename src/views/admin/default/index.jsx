@@ -39,11 +39,11 @@ import MiniStatistics from "components/card/MiniStatistics";
 import IconBox from "components/icons/IconBox";
 import React from "react";
 import {
-  MdAddTask,
-  MdOutlineRunCircle,
-  MdOutlineDirectionsRun,
+  RiTrophyFill,
+  RiRunFill,
+  RiUserUnfollowFill,
   RiMedalFill,
-} from "react-icons/md";
+} from "react-icons/ri";
 import CheckTable from "views/admin/default/components/CheckTable";
 import ComplexTable from "views/admin/default/components/ComplexTable";
 import DailyTraffic from "views/admin/default/components/DailyTraffic";
@@ -75,7 +75,7 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdOutlineDirectionsRun} color={brandColor} />
+                <Icon w='32px' h='32px' as={RiRunFill} color={brandColor} />
               }
             />
           }
@@ -89,7 +89,7 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={MdOutlineRunCircle} color={brandColor} />
+                <Icon w='32px' h='32px' as={RiUserUnfollowFill} color={brandColor} />
               }
             />
           }
@@ -124,7 +124,7 @@ export default function UserReports() {
               w='56px'
               h='56px'
               bg='linear-gradient(90deg, #4481EB 0%, #04BEFE 100%)'
-              icon={<Icon w='28px' h='28px' as={MdAddTask} color='white' />}
+              icon={<Icon w='28px' h='28px' as={RiTrophyFill} color='white' />}
             />
           }
           name='Best Performance Year'
@@ -137,7 +137,7 @@ export default function UserReports() {
               h='56px'
               bg={boxBg}
               icon={
-                <Icon w='32px' h='32px' as={} color={brandColor} />
+                <Icon w='32px' h='32px' as={RiMedalFill} color={brandColor} />
               }
             />
           }
