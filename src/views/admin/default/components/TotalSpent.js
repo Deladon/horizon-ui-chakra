@@ -12,7 +12,7 @@ import Card from "components/card/Card.js";
 import LineChart from "components/charts/LineChart";
 import React from "react";
 import { IoCheckmarkCircle } from "react-icons/io5";
-import { MdBarChart, MdOutlineCalendarToday } from "react-icons/md";
+import { MdOutlineDirectionsRun, MdOutlineCalendarToday } from "react-icons/md";
 // Assets
 import { RiArrowUpSFill } from "react-icons/ri";
 import {
@@ -59,7 +59,7 @@ export default function TotalSpent(props) {
               color={textColorSecondary}
               me='4px'
             />
-            This month
+            100 M
           </Button>
           <Button
             ms='auto'
@@ -74,7 +74,7 @@ export default function TotalSpent(props) {
             lineHeight='100%'
             borderRadius='10px'
             {...rest}>
-            <Icon as={MdBarChart} color={iconColor} w='24px' h='24px' />
+            <Icon as={MdOutlineDirectionsRun} color={iconColor} w='24px' h='24px' />
           </Button>
         </Flex>
       </Flex>
@@ -86,7 +86,7 @@ export default function TotalSpent(props) {
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>
-            $37.5K
+            Yearly Comparison
           </Text>
           <Flex align='center' mb='20px'>
             <Text
@@ -100,7 +100,7 @@ export default function TotalSpent(props) {
             <Flex align='center'>
               <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
               <Text color='green.500' fontSize='sm' fontWeight='700'>
-                +2.45%
+                +4.45%
               </Text>
             </Flex>
           </Flex>
@@ -108,7 +108,7 @@ export default function TotalSpent(props) {
           <Flex align='center'>
             <Icon as={IoCheckmarkCircle} color='green.500' me='4px' />
             <Text color='green.500' fontSize='md' fontWeight='700'>
-              On track
+              On track to Olympics
             </Text>
           </Flex>
         </Flex>
